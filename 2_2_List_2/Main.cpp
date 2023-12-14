@@ -1,11 +1,11 @@
-#include "DList.h"
+#include "SList.h"
 
 int main()
 {
     List mylist;
-    InitDList(&mylist);
+    InitList(&mylist);
 
-        ElemType Item;
+    ElemType Item;
     Node *p = NULL;
 
     int select = 1;
@@ -14,7 +14,7 @@ int main()
         printf("******************************************\n");
         printf("*  [1]  push_back       [2]  push_front  *\n");
         printf("*  [3]  show_list       [4]  pop_back    *\n");
-        printf("*  [5]  pop_front       [6]  insert_val  *\n");
+        printf("*  [5]  pop_front       [6]  insert_val  *\n");  // insert_val 值升序插入
         printf("*  [7]  find            [8]  lenth       *\n");
         printf("*  [9]  delete_val      [10] sort        *\n");
         printf("*  [11] reverse         [12] clear       *\n");
@@ -84,4 +84,5 @@ int main()
     }
     // 结束对表的相关操作后，释放对应空间
     destroy(&mylist);
+    printf("ok");
 }

@@ -1,9 +1,9 @@
-#include "SList.h"
+#include "DCList.h"
 
 int main()
 {
     List mylist;
-    InitList(&mylist);
+    InitDCList(&mylist);
 
     ElemType Item;
     Node *p = NULL;
@@ -14,7 +14,7 @@ int main()
         printf("******************************************\n");
         printf("*  [1]  push_back       [2]  push_front  *\n");
         printf("*  [3]  show_list       [4]  pop_back    *\n");
-        printf("*  [5]  pop_front       [6]  insert_val  *\n");  // insert_val 值升序插入
+        printf("*  [5]  pop_front       [6]  insert_val  *\n");
         printf("*  [7]  find            [8]  lenth       *\n");
         printf("*  [9]  delete_val      [10] sort        *\n");
         printf("*  [11] reverse         [12] clear       *\n");
@@ -56,7 +56,7 @@ int main()
                 scanf("%d", &Item);
                 p = find(&mylist, Item);
                 if(p == NULL)
-                    printf("要查找的数据在链表中不存在。");
+                    printf("要查找的数据在链表中不存在。\n");
                 break;
             case 8:
                 printf("单链表的长度为：>%d \n", length(&mylist));
@@ -84,5 +84,4 @@ int main()
     }
     // 结束对表的相关操作后，释放对应空间
     destroy(&mylist);
-    printf("ok");
 }
