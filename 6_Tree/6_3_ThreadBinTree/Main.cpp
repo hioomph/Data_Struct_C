@@ -26,4 +26,4 @@ int main()
     BinTreeNode *parent = Parent(&mytree, cur);
     printf("%c\'s parent Node = %c\n", cur->data, parent->data);
 
-}
+}  
