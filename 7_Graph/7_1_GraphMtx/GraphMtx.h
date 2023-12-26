@@ -15,7 +15,9 @@ typedef struct GraphMtx
     int   NumEdges;       // 当前边数
 
     T    *VerticesList;   // 顶点列表
-    int **Edge;           // 指向邻接矩阵，二维数组（？）
+    int **Edge;           // 指向邻接矩阵，二维数组
+    // 一维数组：指向每一行，即每个顶点和其他顶点的边的连接
+    // 二维数组：指向每一列，即当前图包含的所有顶点
 
 }GraphMtx;
 
