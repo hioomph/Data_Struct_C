@@ -267,7 +267,7 @@ int GetNextNeighbor(GraphLink *g, T v1, T v2)
 
 //////////////////////////////////////////////////////////////////
 
-// 深度优先搜索（Deep-First Search）
+// 深度优先遍历
 void DFS(GraphLink *g, T vertex)
 {
     int n = g->NumVertices;
@@ -285,7 +285,6 @@ void DFS(GraphLink *g, T vertex)
     DFS(g, v, visited);
     free(visited);
 }
-
 void DFS(GraphLink *g, int v, bool visited[])
 {
     // 顶点A对应的位置为A
@@ -343,7 +342,8 @@ void BFS(GraphLink *g, T vertex)
         }
     }
 }
-
+ 
+// 非连通图遍历
 void Components(GraphLink *g)
 {
     int n = g->NumVertices;
