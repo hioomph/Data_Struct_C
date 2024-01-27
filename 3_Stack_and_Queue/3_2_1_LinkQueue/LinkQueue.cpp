@@ -39,6 +39,12 @@ int Length(LinkQueue *queue)
     return len;
 }
 
+// 判空
+bool EmptyQueue(LinkQueue *queue)
+{
+    return queue->front == queue->tail;
+}
+
 // 入队（链队列的入队-尾插）
 void EnQueue(LinkQueue *queue, ElemType x)
 {

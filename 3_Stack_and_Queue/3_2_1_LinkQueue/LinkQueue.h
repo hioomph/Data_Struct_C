@@ -22,6 +22,7 @@ typedef struct LinkQueue
 void InitQueue(LinkQueue *queue);
 void ShowQueue(LinkQueue *queue);
 int Length(LinkQueue *queue);
+bool EmptyQueue(LinkQueue *queue);
 
 void EnQueue(LinkQueue *queue, ElemType x);
 void DeQueue(LinkQueue *queue);

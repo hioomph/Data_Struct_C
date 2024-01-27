@@ -309,7 +309,7 @@ void InsertFirst(GenList &gl, char *str)
 
     // 遍历创建的子表t，使得p指向当前表的末尾，以便和gl衔接
     GLNode *p = t->tp;
-    while(p->tp != NULL)
+    while(p->tp  != NULL)
     {
         p = p->tp;
     }

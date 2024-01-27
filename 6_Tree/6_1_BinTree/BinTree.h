@@ -28,7 +28,7 @@ void InitBinTree(BinTree *bt, ElemType ref);
 void CreateBinTree_1(BinTree *bt);
 void CreateBinTree_1(BinTree *bt, BinTreeNode **t);  // bt的root为指针类型，为了修改它，要传入指针的地址（二级指针）
 void CreateBinTree_2(BinTree *bt);
-void CreateBinTree_2(BinTree *bt, BinTreeNode *&t);  // 引用时针对t实现的，对应&t；而为了修改t，需要传入它的地址，对应*&t
+void CreateBinTree_2(BinTree *bt, BinTreeNode *&t);  // 引用是针对t实现的，对应&t；而为了修改t，需要传入它的地址，对应*&t
 void CreateBinTree_3(BinTree *bt);
 BinTreeNode* CreateBinTree_3_(BinTree *bt);
 void CreateBinTree_4(BinTree *bt, char *str);
